@@ -1,78 +1,30 @@
-﻿class Program
-{
+﻿using GenericsUsingCSharp;
 
+class Program
+{
     static void Main(string[] args)
     {
 
-        int[] inArr = { 1, 2, 3, 4, 5, };
-        char[] charArr = { 'a', 'b', 'c', 'd', 'e' };
-        double[] doubleArr = { 1.0,1.2,1.3,1.4,1.5};
-        string[] stringArr = { "puja","disha","asmita","komal","mani"};
+        //Print Array Data 
+        PrintArrayData printArrayData = new PrintArrayData();
+        PrintArrayData.ToPrint(printArrayData.inArr);
+        Console.WriteLine();
 
-        ToPrint(inArr);
-        ToPrint(doubleArr);
-        ToPrint(charArr);
-        ToPrint(stringArr);
-        
+        PrintArrayData.ToPrint(printArrayData.doubleArr);
+        Console.WriteLine();
+
+        PrintArrayData.ToPrint(printArrayData.charArr);
+        Console.WriteLine();
+
+        PrintArrayData.ToPrint(printArrayData.stringArr);
+        Console.WriteLine();
+
+
+        //Swap Two Variables 
+        SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();   
+        swapTwoNumbers.SwapTwoVariables();
+
+
+
     }
-
-    //Using Generic 
-    public static void ToPrint<T>(T[] intArray)
-    {
-        foreach (var element in intArray)
-        {
-            Console.WriteLine(element);
-
-        }
-
-    }
-
-
-    /*
-    //Without Generics
-    public static void ToPrintInt(int[] intArray)
-    {
-        foreach (int element in intArray)
-        {
-            Console.WriteLine(element);
-            
-        }
-    
-    }
-
-    public static void ToPrintChar(char[] charArr)
-    {
-        foreach (int element in charArr)
-        { 
-            Console.WriteLine(element);
-
-        }
-    }
-
-
-    public static void ToPrintDouble(double[] doubleArr)
-    {
-        foreach (double element in doubleArr)
-        { 
-            Console .WriteLine(element);
-        }
-    }
-
-
-    public static void ToPrintString(string[] StringArr)
-    {
-        foreach (string element in StringArr)
-        {
-            Console.WriteLine(element);
-        }
-    }
-    */
-
-
-
-
-
-
-
-
-}
+}   
