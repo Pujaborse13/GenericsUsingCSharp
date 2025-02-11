@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-
+        /*
         //Print Array Data 
         PrintArrayData printArrayData = new PrintArrayData();
         PrintArrayData.ToPrint(printArrayData.inArr);
@@ -19,12 +19,13 @@ class Program
         PrintArrayData.ToPrint(printArrayData.stringArr);
         Console.WriteLine();
 
+        */
 
         //Swap Two Variables 
         SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();   
         swapTwoNumbers.SwapTwoVariables();
 
-
+       
 
     }
 }   
