@@ -32,11 +32,18 @@ class Program
         CompairDifferentDataTypeValues compairDifferentDataType = new CompairDifferentDataTypeValues();
         compairDifferentDataType.ComparerTwoValues();
 
-        */
+        
 
 
         MinMaxOfThreeNumber minMaxOfThreeNumber = new MinMaxOfThreeNumber();
         minMaxOfThreeNumber.FindMinMax();
+
+        */
+
+
+        SumOfTwoNumbers sumOfTwoNumbers = new SumOfTwoNumbers();
+        sumOfTwoNumbers.Display();
+
 
 
 
