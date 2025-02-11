@@ -9,14 +9,27 @@
         double[] doubleArr = { 1.0,1.2,1.3,1.4,1.5};
         string[] stringArr = { "puja","disha","asmita","komal","mani"};
 
-        ToPrintInt(inArr);
-        ToPrintDouble(doubleArr);
-        ToPrintChar(charArr);
-        ToPrintString(stringArr);
+        ToPrint(inArr);
+        ToPrint(doubleArr);
+        ToPrint(charArr);
+        ToPrint(stringArr);
         
     }
 
+    //Using Generic 
+    public static void ToPrint<T>(T[] intArray)
+    {
+        foreach (var element in intArray)
+        {
+            Console.WriteLine(element);
 
+        }
+
+    }
+
+
+    /*
+    //Without Generics
     public static void ToPrintInt(int[] intArray)
     {
         foreach (int element in intArray)
@@ -53,6 +66,8 @@
             Console.WriteLine(element);
         }
     }
+    */
+
 
 
 
