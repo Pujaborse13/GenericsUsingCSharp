@@ -19,13 +19,20 @@ class Program
         PrintArrayData.ToPrint(printArrayData.stringArr);
         Console.WriteLine();
 
-        */
+       
 
         //Swap Two Variables 
         SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();   
         swapTwoNumbers.SwapTwoVariables();
 
-       
+         */
+
+
+
+        CompairDifferentDataTypeValues compairDifferentDataType = new CompairDifferentDataTypeValues();
+        compairDifferentDataType.ComparerTwoValues();
+
+
 
     }
 }   
