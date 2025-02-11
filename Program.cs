@@ -25,12 +25,18 @@ class Program
         SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();   
         swapTwoNumbers.SwapTwoVariables();
 
-         */
+         
 
 
 
         CompairDifferentDataTypeValues compairDifferentDataType = new CompairDifferentDataTypeValues();
         compairDifferentDataType.ComparerTwoValues();
+
+        */
+
+
+        MinMaxOfThreeNumber minMaxOfThreeNumber = new MinMaxOfThreeNumber();
+        minMaxOfThreeNumber.FindMinMax();
 
 
 
